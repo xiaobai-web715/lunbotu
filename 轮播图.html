@@ -1,0 +1,156 @@
+<html lang="en">
+    <head>
+        <style>
+            @font-face{
+                font-family: 'iconfont';
+                src: url('./font/iconfont.eot');
+                src: url('./font/iconfont.eot?#iefix') format('embedded-opentype'),
+                     url('./font/iconfont.woff2') format('woff2'),
+                     url('./font/iconfont.woff') format('woff'),
+                     url('./font/iconfont.ttf') format('truetype'),
+                     url('./font/iconfont.svg#iconfont') format('svg');
+            }
+            .iconfont{
+                font-family: "iconfont" !important;
+                font-size: 14px;
+                font-style: normal;
+                font-weight:normal;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+            ul,body,li,div,button{
+                padding:0;
+                margin:0;
+            }
+            ul{
+                list-style:none;
+                position:absolute;
+                height:540px;
+                transition:all 3s;
+            }
+
+            em{
+                list-style:none;
+            }
+            div{
+                width:960px;
+                height:540px;
+                border:2px solid black;
+                overflow:hidden;
+                margin:0 auto;
+                position:relative;
+            }
+            .fl{
+                float:left;
+            }
+
+            .fr{
+                float : right;
+            }
+
+            .clearfix::after{
+                content:"";
+                display:block;
+                clear:both;
+            }
+
+            img{
+                width:960px;
+                height:540px;
+            }
+
+            button{
+                width:30px;
+                height:50px;
+                line-height:50px;
+                text-align:center;
+                background-color:rgba(255, 255, 255,0.3);
+                border:none;
+                cursor: pointer;
+            }
+
+            button span{
+                display:inline-block;
+                width:14px;
+                height:14px;
+                line-height:14px;
+            }
+
+            button:hover{
+                background-color:rgba(255, 255, 255,0.8);
+            }
+
+            button.fl{
+                border-radius:0 30px 30px 0;
+                position:absolute;
+                left:0;
+                top:50%;
+                transform: translate(0 , -50%);
+            }
+
+            button.fr{
+                border-radius:25px 0 0 25px;
+                position:absolute;
+                right:0;
+                top:50%;
+                transform: translate(0 , -50%);
+            }
+
+            .dot{
+                position:absolute;
+                height:20px;
+                text-align:center;
+                bottom:20px;  
+                border:none;
+            }
+
+            .dot em{
+                position:relative;
+                display:inline-block;
+                height:15px;
+                width:15px;
+                background-color:rgba(255, 255, 255,0.8);
+                top:50%;
+                transform: translate(0 , -50%);
+                border-radius:50%;
+                margin:0 3px;
+            }
+
+            em.active{
+                box-sizing:border-box;
+                background-color:#f40;
+                border:4px solid #fff;
+            }
+        </style>
+        <title>轮播图</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div class="clearfix">
+            <ul class="clearfix" style="left: 0;">
+                <li class="fl"><img src="./image/3.jpg" ></li>
+                <li class="fl"><img src="./image/5.jpg" ></li>
+                <li class="fl"><img src="./image/1.jpg" ></li>
+                <li class="fl"><img src="./image/6.jpg" ></li>
+                <li class="fl"><img src="./image/12.jpg" ></li>
+                <li class="fl"><img src="./image/7.jpg" ></li>
+                <li class="fl"><img src="./image/123.jpg" ></li>
+                <li class="fl"><img src="./image/8.jpg" ></li>
+                <li class="fl"><img src="./image/23.jpg" ></li>
+                <li class="fl"><img src="./image/9.jpg" ></li>
+                <li class="fl"><img src="./image/19.jpg" ></li>
+                <li class="fl"><img src="./image/27.jpg" ></li>
+                <li class="fl"><img src="./image/31.jpg" ></li>
+                <li class="fl"><img src="./image/28.jpg" ></li>
+                <li class="fl"><img src="./image/135.jpg" ></li>
+                <li class="fl"><img src="./image/321.jpg" ></li>
+                <li class="fl"><img src="./image/3.jpg" ></li>
+            </ul>
+            <button class="fl"><span class="iconfont">&#xe607;</span></button>
+            <button class='fr'><span class="iconfont">&#xe63c;</span></button>
+            <div class="dot"></div>
+        </div>
+        <script src="./轮播图.js"></script>
+        <!-- <script src="./js/tools.js"></script> -->
+    </body>
+</html>
